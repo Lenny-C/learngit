@@ -1,0 +1,25 @@
+工作区、缓冲区、归档区、远程仓库
+
+git init 
+git add 1.txt
+git commit -m "添加了1.txt"
+git remote add origin https://github.com/Lenny-C/learngit.git
+git push origin master
+git add .    提交全部
+git log   查看日志
+git reset --mixed  233ae39e9    
+	--mixed  回滚缓冲区和归档区
+	--hard   回滚归档区、缓冲区、工作区
+	-- soft 只回滚归档区  
+git reflog   查看操作记录
+git revert  49b583046b  删除某一次提交的内容
+git branch -v  查看分支
+git checkout -b b1 创建 并转换分支
+git merge b1  合并分支
+git pull 拉取远端代码 == git fetch + git merge
+
+
+ssh-=keygen.exe     生成免密的公钥
+git remote -v 查看所有的远程仓库
+git remote remove origin 删除当前origin仓库
+git remote add origin  github仓库地址      添加github仓库地址
